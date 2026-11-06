@@ -13,8 +13,8 @@ Projede 10 Türk masalı bulunmaktadır: Felek, Üç Turunçlar, Keloğlan ve Ku
 Kullanılan Teknolojiler
 HTML, sayfanın yapısı ve masal metinleri; CSS, tasarım ve ekran uyumu; JavaScript ise masal seçme işlevi için kullanılmıştır. CSS ve JavaScript kodları HTML dosyasının içindedir. Arka plan görseli de dosyaya gömülüdür.
 Nasıl Açılır?
-1. Depodaki index.html dosyasını bilgisayarınıza indirin.
-2. Dosyaya çift tıklayarak Chrome, Firefox, Edge veya başka bir güncel tarayıcıda açın.
+1. Depodaki evvelzamanicinde.htm dosyasını bilgisayarınıza indirin.
+2. Dosyaya çift tıklayarak Safari, Edge veya başka bir güncel tarayıcıda açın.
 3. Soldaki masal listesinden bir başlık seçerek okumaya başlayın.
 Ek kurulum veya internet bağlantısı gerekmez.
 Sunum Videosu
