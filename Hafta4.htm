@@ -1,0 +1,26 @@
++ butonuna tıklayarak sayıyı artırabilir, - butonuna tıklayarak sayıyı azaltabilirsiniz
+<p id="sayi">0</p>
+<button id="artir">+</button>
+<button id="azalt">-</button>
+<button id="sifirla">Sıfırla</button>
+
+<script>
+  let sayac = 0;
+  const sayi = document.getElementById("sayi");
+
+  document.getElementById("artir")
+    .addEventListener("click", function () {
+      sayac++;
+      sayi.textContent = sayac;
+    });
+  document.getElementById("azalt")
+    .addEventListener("click", function () {
+      sayac--;
+      sayi.textContent = sayac;
+    });
+  document.getElementById("sifirla")
+    .addEventListener("click", function () {
+      sayac = 0;
+      sayi.textContent = sayac;
+    });
+</script>

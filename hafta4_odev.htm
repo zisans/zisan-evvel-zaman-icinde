@@ -1,0 +1,42 @@
+<h2>Tıkla ve renkleri eşleştir</h2>
+<html lang="tr">
+<meta charset="UTF-8">
+<title>Basit Renk Eşleme</title>
+<style>
+  button { width: 60px; height: 60px; margin: 5px; background: gray; }
+</style>
+
+<button class="kart" data-renk="red">o</button>
+<button class="kart" data-renk="pink">o</button>
+<button class="kart" data-renk="red">o</button>
+<button class="kart" data-renk="pink">o</button>
+
+<script>
+  let acikKartlar = [];
+
+  document.querySelectorAll(".kart").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      // rengi göster
+      btn.style.background = btn.dataset.renk;
+      acikKartlar.push(btn);
+
+      // iki kart açıldıysa kontrol et
+      if (acikKartlar.length === 2) {
+        const [k1, k2] = acikKartlar;
+
+        if (k1.dataset.renk === k2.dataset.renk) {
+          console.log("Eşleşti!");
+        } else {
+          setTimeout(function () {
+            k1.style.background = "gray";
+            k2.style.background = "gray";
+          }, 500);
+        }
+
+        acikKartlar = []; // tekrar boşalt
+      }
+    });
+  });
+</script>
+</body>
+</html>

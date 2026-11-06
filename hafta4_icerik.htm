@@ -1,0 +1,39 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş Sayfası</title>
+    <style>
+        body {
+            background-color: #7FFFD4;
+        }
+        #yaz {
+            background-color: #FF00FF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <input id="isim" placeholder="Kullanıcı adı">
+    <br><br>
+    <input id="sifre" type="password" placeholder="Şifre">
+    <button id="yaz">Giriş</button>
+    <p id="cikti"></p>
+    <script>
+        document.getElementById("yaz")
+            .addEventListener("click", function () {
+                const ad = document.getElementById("isim").value;
+                const sifre = document.getElementById("sifre").value;
+                if (ad === "") {
+                    alert("Kullanıcı adını giriniz!");
+                    return;
+                }
+                if (sifre === "") {
+                    alert("Lütfen şifreni yaz!");
+                    return;
+                }
+                document.getElementById("cikti")
+                    .textContent = "Merhaba " + ad + "!";
+            });
+    </script>
+</body>
+</html>
